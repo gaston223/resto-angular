@@ -7,14 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarteComponent implements OnInit {
 
-  dogs = [
-    { race : 'berger allemand', name : 'Wolfy'},
-    { race : 'buldog anglais', name : 'Mac Fly'},
-    { race : 'caniche', name : 'Rasta'},
-  ];
-
-  temperature = [0, 10, 20, 30];
-
   constructor() { }
 
   ngOnInit() {
