@@ -16,12 +16,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { DishTableComponent } from './dish-table/dish-table.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'carte', component: CarteComponent},
   {path: 'reserve', component: ReserveComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'schedule', component: ScheduleComponent},
 ];
 
 
@@ -34,7 +37,8 @@ const routes: Routes = [
     ReserveComponent,
     ContactComponent,
     MainDashComponent,
-    DishTableComponent
+    DishTableComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,7 @@ const routes: Routes = [
     MatNativeDateModule,
     MatSelectModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'fr-FR'}],
