@@ -18,6 +18,7 @@ import { DishTableComponent } from './dish-table/dish-table.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhoneComponent } from './phone/phone.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -38,7 +39,8 @@ const routes: Routes = [
     ContactComponent,
     MainDashComponent,
     DishTableComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    PhoneComponent
   ],
   imports: [
     BrowserModule,
